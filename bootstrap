@@ -1,0 +1,10 @@
+#!/bin/sh
+
+sudo apt install -y wget
+wget https://github.com/alexveecle/workstation-bootstrap/archive/refs/heads/main.zip
+unzip main.zip
+cd workstation-bootstrap-main/scripts
+./provision.sh
+cd -
+rm main.zip
+rm -rf workstation-bootstrap-main
